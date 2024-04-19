@@ -1,0 +1,57 @@
+.border{
+    border: 2px solid red;   
+}
+
+.flex{
+    display: flex
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+.justify-content{
+    justify-content: center;
+
+}
+
+.iteam-center{
+    align-items: center;
+}
+
+.invert{
+    filter: invert(1);
+}
+.bg-gray{
+    background-color:hsl(0deg 0% 7.06%);
+    color: white;
+}
+
+.bg-black{
+    background-color:black
+}
+
+.rounded{
+    border-radius: 5px;
+}
+
+.img-wd{
+    width: 21px;
+}
+.border-none{
+    border:none;
+}
+
+/* For WebKit (Chrome, Safari, Opera) */
+
+  
+ .bg-play{
+    background-color: #323532;
+ }
+  
+.gap-7{
+    gap: 7px;
+}
+.gap-5{
+    gap: 5px;
+}

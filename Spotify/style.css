@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #333232; 
+  }
+  
+  html{
+    overflow: hidden;
+    /* black color for the thumb */
+  }
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.left{
+    width: 25vw;
+    padding: 3px;
+    margin : 0px 0 0 0;
+}
+
+.home{
+    padding: 17px;
+    margin: 4px;
+}
+
+.home ul li{
+    list-style: none;
+    margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap:17px
+}
+
+.lib-heading{
+    margin-left: 5px;
+    gap: 13px;
+}
+
+.plus{
+    margin-left: 72px;
+    width: 15px;
+}
+
+.library{
+    min-height: 70vh;
+    position: relative;
+    margin: 4px;
+    padding: 12px;
+}
+.footer{
+    position:absolute;
+    bottom: 0;
+    width: 20vw;
+    height: 17vh;
+    
+}
+.lang{
+    position: absolute;
+    border-radius: 25px;
+    bottom: 0;
+    margin-bottom:5px;
+    padding: 7px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2px;
+}
+
+.cookies{
+    margin-left: 15px;
+    font-weight: 100;
+    font-size:11px;
+}
+.lang-logo{
+    width:13px;
+}
+
+.lang-content{
+    font-weight: 700;
+}
+
+/* From here right side  */
+.right{
+    width: 74vw;
+    margin: 8px 0;
+    position: relative;
+}
+.header{
+    display: flex;
+    height: 8vh;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #101010;
+    padding: 12px 15px 0px 5px;
+}
+.nav-buttons{
+    font-weight: 700;
+    border-radius: 17px;
+    padding: 10px;
+    font-size:15px;
+    cursor: pointer;
+}
+.sign-up{
+    color: rgb(115, 119, 117);
+    border: none;
+    outline: none;
+    background-color: #101010;
+}
+.sign-up:hover{
+    font-size: 16px;
+    color: white;
+}
+
+.log-in:hover{
+    font-size: 16px;
+}
+
+.spotify_playlist{
+    padding: 5px 10px;
+}
+
+h1{
+    font-size: 17px;
+    font-weight: 700;
+}
+.card-cantainer{
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    max-height: 67vh;
+    scrollbar-width: thin;
+    scrollbar-color: #333232 transparent;
+}
+.card{
+    background-color: #161616;
+    position: relative;
+    width: 120px;
+    padding: 7px;
+    margin: 0 11px 15px 5px;
+}
+
+.card-img{
+    width: 100%;
+    object-fit: contain;
+    border-radius:3%;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 13px;
+}
+
+p{
+    font-weight: 400;
+    font-size: 9px;
+    color: rgb(236, 236, 211);
+}
+.play{
+    width:30px;
+    height: 30px;
+    position: absolute;
+    top: 125px;
+    /*  actually top:85; */
+    right: 15px;
+    opacity: 0;
+    transition: all 1s ease-out;
+    border-radius: 50%;
+    padding:5px 2px 0px 6px;
+    background-color: rgb(117, 238, 117);
+}
+
+.audio-player{
+    width:100%;
+    object-fit: contain;
+    position: absolute;
+    z-index: 1;
+    bottom:0;
+    padding: 8px 0;
+    align-self:center;
+    row-gap: 9px;
+    border-radius: 5px;
+}
+
+.songs{
+    overflow-y: scroll;
+    height:50vh;
+    margin: 5px 0;
+    border-radius: 7px;
+    background-color: #1d1818;
+}
+
+.songs-list{
+  margin: 10px 0px;;
+}
+
+.songs-list > li{
+    font-size:14px;
+    font-weight:400;
+    margin:15px 1px 15px 5px;
+    list-style: none;
+    cursor: pointer;
+    border-radius:9px;
+    border: 1px solid rgb(194, 213, 243);
+    padding: 15px;
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.seekbar{
+    border:2px solid rgb(126, 122, 122);
+    width: 100%;
+    border-radius:10px;
+    position: absolute;
+    bottom: 0;
+    object-fit: contain;
+    z-index: 2;
+}
+
+.pointer{
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -5px;
+    z-index: 3;
+    left: 0%;
+    transition: left 0.5s;
+}
+.play-logo{
+    cursor: pointer;
+}
+
+.play-button{
+    cursor: pointer;
+    padding:4px;
+    margin: 5px 2px 1px 4px;
+    border-radius:9px;
+}
